@@ -1,3 +1,5 @@
+export const Username = `Oliver.conner@gmail.com`
+
 export const OfferCards = [
     {
         id: `1`,
