@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 
 const FavoritePage = (props) => {
     const {username, items} = props;
+
   return (
     <>
         <div style={{display: `none`}}>
@@ -76,7 +77,7 @@ const FavoritePage = (props) => {
                                                             </div>
                                                             <button className="place-card__bookmark-button place-card__bookmark-button--active button" type="button">
                                                                 <svg className="place-card__bookmark-icon" width="18" height="19">
-                                                                    <use xlink:href="#icon-bookmark"></use>
+                                                                    <use xlinkHref="#icon-bookmark"></use>
                                                                 </svg>
                                                                 <span className="visually-hidden">In bookmarks</span>
                                                             </button>
@@ -126,13 +127,13 @@ const OfferCardType = PropTypes.shape({
     type: PropTypes.string.isRequired,
 });
 
-FavoritesPage.propTypes = {
+FavoritePage.propTypes = {
     username: PropTypes.string.isRequired,
     items: PropTypes.arrayOf(
         PropTypes.shape({
             city: PropTypes.string.isRequired,
             id: PropTypes.string.isRequired,
-            items: PropTypes.array(OfferCardType).isRequired,
+            items: PropTypes.arrayOf(OfferCardType).isRequired,
         }),
     ),
 };
