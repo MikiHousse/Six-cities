@@ -19,7 +19,7 @@ export const Sort = [
     label: `Top rated first`,
     value: `top`,
   },
-]
+];
 
 export const OfferCards = [
     {
