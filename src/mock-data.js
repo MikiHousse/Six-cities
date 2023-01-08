@@ -1,4 +1,4 @@
-export const Username = `Oliver.conner@gmail.com`
+export const Username = `john_doe@gmail.com`;
 
 export const MainTitle = `312 places to stay in Amsterdam`;
 
@@ -8,11 +8,11 @@ export const Sort = [
     value: `Popular`,
   },
   {
-    label: `Price low to high`,
+    label: `Price: low to high`,
     value: `asc_price`,
   },
   {
-    label: `Price high to low`,
+    label: `Price: high to low`,
     value: `desc_price`,
   },
   {
@@ -22,62 +22,63 @@ export const Sort = [
 ];
 
 export const OfferCards = [
-    {
-        id: `1`,
-        mark: `Premium`,
-        href: `#`,
-        img: `img/apartment-01.jpg`,
-        price: `€120`,
-        attribute: `night`,
-        hasBookmark: false,
-        rating: 4,
-        name: `Beautiful & luxurious apartment at great location`,
-        type: `Apartment`,
-    },
-    {
-        id: `2`,
-        href: `#`,
-        img: `img/room.jpg`,
-        price: `€80`,
-        attribute: `night`,
-        hasBookmark: true,
-        rating: 4,
-        name: `Wood and stone place`,
-        type: `Privete room`,
-    },    {
-        id: `3`,
-        href: `#`,
-        img: `img/apartment-02.jpg`,
-        price: `€132`,
-        attribute: `night`,
-        hasBookmark: false,
-        rating: 4,
-        name: `Canal View Prinsengracht`,
-        type: `Apartment`,
-    },
-    {
-        id: `4`,
-        mark: `Premium`,
-        href: `#`,
-        img: `img/apartment-03.jpg`,
-        price: `€180`,
-        attribute: `night`,
-        hasBookmark: false,
-        rating: 5,
-        name: `Nice, cozy, warm big bed apartment`,
-        type: `Apartment`,
-    },
-    {
-        id: `5`,
-        href: `#`,
-        img: `img/room.jpg`,
-        price: `€80`,
-        attribute: `night`,
-        hasBookmark: false,
-        rating: 4,
-        name: `Nice, cozy, warm big bed apartment`,
-        type: `Private room`,
-    },
+  {
+    id: `1`,
+    mark: `Premium`,
+    href: `#`,
+    img: `img/apartment-01.jpg`,
+    price: `€120`,
+    attribute: `night`,
+    hasBookmark: false,
+    rating: 4,
+    name: `Beautiful & luxurious apartment at great location`,
+    type: `Apartment`,
+  },
+  {
+    id: `2`,
+    href: `#`,
+    img: `img/room.jpg`,
+    price: `€80`,
+    attribute: `night`,
+    hasBookmark: true,
+    rating: 4,
+    name: `Wood and stone place`,
+    type: `Private room`,
+  },
+  {
+    id: `3`,
+    href: `#`,
+    img: `img/apartment-02.jpg`,
+    price: `€132`,
+    attribute: `night`,
+    hasBookmark: false,
+    rating: 4,
+    name: `Canal View Prinsengracht`,
+    type: `Apartment`,
+  },
+  {
+    id: `4`,
+    mark: `Premium`,
+    href: `#`,
+    img: `img/apartment-03.jpg`,
+    price: `€180`,
+    attribute: `night`,
+    hasBookmark: false,
+    rating: 5,
+    name: `Nice, cozy, warm big bed apartment`,
+    type: `Apartment`,
+  },
+  {
+    id: `5`,
+    href: `#`,
+    img: `img/room.jpg`,
+    price: `€80`,
+    attribute: `night`,
+    hasBookmark: false,
+    rating: 4,
+    name: `Nice, cozy, warm big bed apartment`,
+    type: `Private room`,
+  },
 ];
 
 export const FavoritesList = [
@@ -89,7 +90,7 @@ export const FavoritesList = [
         id: `1`,
         mark: `Premium`,
         href: `#`,
-        img: `img/apartament-01.jpg`,
+        img: `img/apartment-01.jpg`,
         price: `€120`,
         attribute: `night`,
         hasBookmark: true,
@@ -111,13 +112,13 @@ export const FavoritesList = [
     ],
   },
   {
-    city: `Colonge`,
+    city: `Cologne`,
     id: `22`,
     items: [
       {
         id: `3`,
         href: `#`,
-        img: `img/apartament-02.jpg`,
+        img: `img/apartment-02.jpg`,
         price: `€132`,
         attribute: `night`,
         hasBookmark: true,
@@ -136,7 +137,7 @@ export const CitiesList = [
   },
   {
     id: `222`,
-    name: `Colange`,
+    name: `Cologne`,
   },
   {
     id: `333`,

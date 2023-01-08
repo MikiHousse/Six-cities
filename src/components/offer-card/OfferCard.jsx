@@ -55,7 +55,7 @@ OfferCard.propTypes = {
         price: PropTypes.string.isRequired,
         attribute: PropTypes.string.isRequired,
         hasBookmark: PropTypes.bool,
-        rating: PropTypes.string.isRequired,
+        rating: PropTypes.number.isRequired,
         name: PropTypes.string.isRequired,
         type: PropTypes.string.isRequired,
     }).isRequired
