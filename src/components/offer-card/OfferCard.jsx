@@ -1,9 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom'
+
+import {OfferCardTypes} from '../../../prop-types/offer-card'
 
 const STAR_WIDTH = 20;
 
-const OfferCard = ({item = {}}) => {
+const OfferCard = (props) => {
     const {mark, href, img, price, attribute, hasBookmark, rating, name, type} = item;
     const activeBookmarkClass = hasBookmark ? `place-card__bookmark-button--active` : ``;
     return (

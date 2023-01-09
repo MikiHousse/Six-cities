@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import {ReviewersType, OfferCardTypes} from '../../prop-types/offer-card';
 import MainPage from "../main-page/MainPage";
 import SignInPage from "../sign-in-page/SignInPage"
 import FavoritesPage from "../favorites-page/FavoritePage";
@@ -33,7 +34,10 @@ const App = (props) => {
               items={favoritesList}/>
           </Route>
           <Route path="/offer/:id" exact>
-            <OfferPage/>
+            <OfferPage username={username}
+              items={offersCards}
+              reviewers={reviewers}
+              neighboursList={offersCards.slice(0, 3)}/>
           </Route>
           <Route>
             <NotFoundPage/>
@@ -43,29 +47,6 @@ const App = (props) => {
     </>
   );
 };
-
-const OfferCardType = PropTypes.shape({
-  /** Идентификатор карточки */
-  id: PropTypes.string.isRequired,
-  /** Подпись с дополнительной информацие */
-  mark: PropTypes.string,
-  /** Ссылка длля перехода в карточку */
-  href: PropTypes.string.isRequired,
-  /** Ссылка на изображение карточки */
-  img: PropTypes.string.isRequired,
-  /** Цена */
-  price: PropTypes.string.isRequired,
-  /** Дополнительная подпись для цены */
-  attribute: PropTypes.string.isRequired,
-  /** Присутствует ли карточка в закладках */
-  hasBookmark: PropTypes.bool,
-  /** ОЦенка */
-  rating: PropTypes.number.isRequired,
-  /** Наименование карточки */
-  name: PropTypes.string.isRequired,
-  /** Тип */
-  type: PropTypes.string.isRequired,
-});
 
 App.propTypes = {
   /** Имя пользователя */
@@ -103,6 +84,7 @@ App.propTypes = {
         items: PropTypes.arrayOf(OfferCardType).isRequired,
       }),
   ),
+  reviewers: PropTypes.arrayOf(ReviewersType).isRequired,
 };
 
 export default App;
